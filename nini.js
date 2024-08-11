@@ -55,7 +55,7 @@ function shuffleImages() {
   setTimeout(() => {
     imageElement.src = selectedImage;
     imageElement.style.opacity = 1; // Fade in
-  }, 500);
+  }, 1000);
 }
 
 let intervalId; // Variable to hold the interval ID
@@ -64,7 +64,7 @@ let intervalId; // Variable to hold the interval ID
 function startShuffling() {
   if (!intervalId) {
     // Check if already running
-    intervalId = setInterval(shuffleImages, 3000);
+    intervalId = setInterval(shuffleImages, 500);
   }
 }
 

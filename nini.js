@@ -42,34 +42,34 @@ const images = [
 ];
 
 const images1 = [
-  "/images/nin1",
-  "/images1/nin2",
-  "/images1/nin3",
-  "/images1/nin4",
-  "/images1/nin5",
-  "/images1/nin6",
-  "/images1/nin7",
-  "/images1/nin8",
-  "/images1/nin9",
-  "/images1/nin10",
-  "/images1/nin11",
-  "/images1/nin12",
-  "/images1/nin13",
-  "/images1/nin14",
-  "/images1/nin15",
-  "/images1/nin16",
-  "/images1/nin17",
-  "/images1/nin18",
-  "/images1/nin19",
-  "/images1/nin20",
-  "/images1/nin21",
-  "/images1/nin22",
-  "/images1/nin23",
-  "/images1/nin24",
-  "/images1/nin25",
-  "/images1/nin26",
-  "/images1/nin27",
-  "/images1/nin28",
+  "/images1/nin1.jpg",
+  "/images1/nin2.jpg",
+  "/images1/nin3.jpg",
+  "/images1/nin4.jpg",
+  "/images1/nin5.jpg",
+  "/images1/nin6.jpg",
+  "/images1/nin7.jpg",
+  "/images1/nin8.jpg",
+  "/images1/nin9.jpg",
+  "/images1/nin10.jpg",
+  "/images1/nin11.jpg",
+  "/images1/nin12.jpg",
+  "/images1/nin13.jpg",
+  "/images1/nin14.jpg",
+  "/images1/nin15.jpg",
+  "/images1/nin16.jpg",
+  "/images1/nin17.jpg",
+  "/images1/nin18.jpg",
+  "/images1/nin19.jpg",
+  "/images1/nin20.jpg",
+  "/images1/nin21.jpg",
+  "/images1/nin22.jpg",
+  "/images1/nin23.jpg",
+  "/images1/nin24.jpg",
+  "/images1/nin25.jpg",
+  "/images1/nin26.jpg",
+  "/images1/nin27.jpg",
+  "/images1/nin28.jpg",
 ];
 
 // Get the image and button elements
@@ -95,7 +95,7 @@ let intervalId; // Variable to hold the interval ID
 function startShuffling() {
   if (!intervalId) {
     // Check if already running
-    intervalId = setInterval(shuffleImages, 500);
+    intervalId = setInterval(shuffleImages, 3000);
   }
 }
 

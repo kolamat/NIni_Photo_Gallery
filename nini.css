@@ -9,11 +9,12 @@ body {
 }
 
 .image-container {
-  width: 70vw;
-  height: 70vh;
+  width: 90vw;
+  height: 90vh;
   overflow: hidden;
-  border: 5px solid #ccc;
+  border: 1px solid #ccc;
   margin-bottom: 20px;
+  border-radius: 20px 10px 20px 10px;
 }
 
 #shuffle-image {
@@ -25,11 +26,32 @@ body {
 
 .controls {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
+  justify-content: space-between;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 20px 15px;
+}
+
+#play-button {
+  border-radius: 12px 20px;
+  font-weight: 400;
+}
+#pause-button {
+  border-radius: 20px 12px;
+  font-weight: 400;
+}
+#play-button:hover {
+  background: #4ea6ea;
+  color: #23375f;
+  font-weight: 600;
+}
+#pause-button:hover {
+  background: #4ea6ea;
+  color: #23375f;
+  font-weight: 600;
 }

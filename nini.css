@@ -26,8 +26,7 @@ body {
 
 .controls {
   display: flex;
-  /* gap: 10px; */
-  justify-content: space-between;
+  gap: 100px;
 }
 
 button {
@@ -46,12 +45,12 @@ button {
   font-weight: 400;
 }
 #play-button:hover {
-  background: #4ea6ea;
-  color: #23375f;
+  background: #abc7dc;
+  color: #040d1d;
   font-weight: 600;
 }
 #pause-button:hover {
-  background: #4ea6ea;
-  color: #23375f;
+  background: #abc7dc;
+  color: #040d1d;
   font-weight: 600;
 }

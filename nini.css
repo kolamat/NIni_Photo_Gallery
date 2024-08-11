@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+  background-color: #1e1e1e;
+}
+
+.image-container {
+  width: 70vw;
+  height: 70vh;
+  overflow: hidden;
+  border: 5px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#shuffle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

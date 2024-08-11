@@ -79,8 +79,8 @@ const pauseButton = document.getElementById("pause-button");
 
 // Function to shuffle images
 function shuffleImages() {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  const selectedImage = images[randomIndex];
+  const randomIndex = Math.floor(Math.random() * images1.length);
+  const selectedImage = images1[randomIndex];
 
   imageElement.style.opacity = 0; // Fade out
   setTimeout(() => {

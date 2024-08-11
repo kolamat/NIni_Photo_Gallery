@@ -70,17 +70,6 @@ const images1 = [
   "/images1/nin26",
   "/images1/nin27",
   "/images1/nin28",
-  // "/images1/nin29",
-  // "/images1/nin30",
-  // "/images1/nin31",
-  // "/images1/nin32",
-  // "/images1/nin33",
-  // "/images1/nin34",
-  // "/images1/nin35",
-  // "/images1/nin36",
-  // "/images1/nin37",
-  // "/images1/nin38",
-  // "/images1/nin39",
 ];
 
 // Get the image and button elements

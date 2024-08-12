@@ -1,13 +1,21 @@
 body {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   align-items: center;
   height: 100vh;
   margin: 20px;
   background-color: #1e1e1e;
 }
 
+#header {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+#countdown {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20%;
+}
 .image-container {
   /* width: 90vw;
   height: 90vh; */
@@ -22,6 +30,7 @@ body {
   height: 100%;
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
+  border-radius: 20px 10px 20px 10px;
 }
 
 .controls {
@@ -73,5 +82,15 @@ button {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: olive;
+  }
+  #header {
+    flex-direction: column;
+    justify-content: center;
   }
 }

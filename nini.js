@@ -1,3 +1,46 @@
+//HEADER_SECTION
+const home = document.createElement("a");
+home.textContent = "CountDown";
+home.href = "#countdown";
+document.getElementById("header").appendChild(home);
+
+const gallery = document.createElement("a");
+gallery.textContent = "Gallery";
+gallery.href = "#gallery";
+document.getElementById("header").appendChild(gallery);
+
+const video = document.createElement("a");
+video.textContent = "Video";
+video.href = "#video";
+document.getElementById("header").appendChild(video);
+
+//Section_One
+const nini = document.createElement("h1");
+nini.textContent =
+  "Welcome to your best and second year on earth wishing you Long life and more prosperity in life and a Happy Birthday ";
+document.querySelector("body").appendChild(nini);
+
+function startCountdown(startNumber) {
+  const countdownElement = document.getElementById("countdown");
+  let currentNumber = startNumber;
+
+  countdownElement.textContent = currentNumber;
+
+  const intervalId = setInterval(() => {
+    currentNumber -= 1;
+    countdownElement.textContent = currentNumber;
+    countdownElement.style.fontSize = "100px";
+
+    if (currentNumber <= 0) {
+      clearInterval(intervalId);
+      countdownElement.textContent = "Time's up!";
+      countdownElement.style.color = "#ff6b6b"; // Change color when time's up
+    }
+  }, 500);
+}
+
+startCountdown(15);
+
 // Array of image URLs
 const images1 = [
   "/images1/nin1.jpg",
@@ -44,7 +87,7 @@ function shuffleImages() {
   setTimeout(() => {
     imageElement.src = selectedImage;
     imageElement.style.opacity = 1; // Fade in
-  }, 10000);
+  }, 9500);
 }
 
 let intervalId; // Variable to hold the interval ID
@@ -72,30 +115,3 @@ pauseButton.addEventListener("click", stopShuffling);
 
 // Start the shuffle initially
 startShuffling();
-
-//Section_One
-const nini = document.createElement("h1");
-nini.textContent =
-  "Welcome to your best and second year on earth wishing you Long life and more prosperity in life and a Happy Birthday ";
-document.querySelector("body").appendChild(nini);
-
-function startCountdown(startNumber) {
-  const countdownElement = document.getElementById("countdown");
-  let currentNumber = startNumber;
-
-  countdownElement.textContent = currentNumber;
-
-  const intervalId = setInterval(() => {
-    currentNumber -= 1;
-    countdownElement.textContent = currentNumber;
-    countdownElement.style.fontSize = "100px";
-
-    if (currentNumber <= 0) {
-      clearInterval(intervalId);
-      countdownElement.textContent = "Time's up!";
-      countdownElement.style.color = "#ff6b6b"; // Change color when time's up
-    }
-  }, 500);
-}
-
-startCountdown(15);

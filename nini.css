@@ -11,16 +11,18 @@ body {
   justify-content: space-between;
 }
 
+a {
+  font-weight: bold;
+  font-size: larger;
+}
+
 #countdown {
   font-size: 2em;
   text-align: center;
   margin-top: 20%;
 }
 .image-container {
-  /* width: 90vw;
-  height: 90vh; */
-  /* overflow: hidden; */
-  border: 1px solid #ccc;
+  border: 1px solid #a0c1c1;
   margin-bottom: 20px;
   border-radius: 20px 10px 20px 10px;
 }
@@ -92,5 +94,6 @@ button {
   #header {
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
   }
 }

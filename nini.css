@@ -1,14 +1,17 @@
 body {
   align-items: center;
   height: 100vh;
-  margin: 20px;
+  margin: 0;
+  padding: 0px;
   background-color: #1e1e1e;
 }
 
 #header {
+  background: #1919b0;
   color: aliceblue;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -37,6 +40,8 @@ a {
 
 .controls {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 100px;
 }
 
@@ -70,6 +75,14 @@ button {
   font-size: 5em;
   color: #61dafb;
   animation: scale 1s infinite;
+}
+
+#video {
+  margin: 50px 0px;
+}
+
+#gallery {
+  margin: 50px 0px;
 }
 
 @keyframes scale {

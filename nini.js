@@ -1,47 +1,4 @@
 // Array of image URLs
-// const images = [
-//   "/images/image1.jpg",
-//   "/images/image2.jpg",
-//   "/images/image3.jpg",
-//   "/images/image4.jpg",
-//   "/images/image5.jpg",
-//   "/images/image6.jpg",
-//   "/images/image7.jpg",
-//   "/images/image8.jpg",
-//   "/images/image9.jpg",
-//   "/images/image10.jpg",
-//   "/images/image11.jpg",
-//   "/images/image12.jpg",
-//   "/images/image13.jpg",
-//   "/images/image14.jpg",
-//   "/images/image15.jpg",
-//   "/images/image16.jpg",
-//   "/images/image17.jpg",
-//   "/images/image18.jpg",
-//   "/images/image19.jpg",
-//   "/images/image20.jpg",
-//   "/images/image21.jpg",
-//   "/images/image22.jpg",
-//   "/images/image23.jpg",
-//   "/images/image24.jpg",
-//   "/images/image25.jpg",
-//   "/images/image26.jpg",
-//   "/images/image27.jpg",
-//   "/images/image28.jpg",
-//   "/images/image29.jpg",
-//   "/images/image30.jpg",
-//   "/images/image31.jpg",
-//   "/images/image32.jpg",
-//   "/images/image33.jpg",
-//   "/images/image34.jpg",
-//   "/images/image35.jpg",
-//   "/images/image36.jpg",
-//   "/images/image37.jpg",
-//   "/images/image38.jpg",
-//   "/images/image39.jpg",
-// ];
-
-// Array of image URLs
 const images1 = [
   "/images1/nin1.jpg",
   "/images1/nin2.jpg",
@@ -87,7 +44,7 @@ function shuffleImages() {
   setTimeout(() => {
     imageElement.src = selectedImage;
     imageElement.style.opacity = 1; // Fade in
-  }, 1000);
+  }, 10000);
 }
 
 let intervalId; // Variable to hold the interval ID
@@ -117,10 +74,10 @@ pauseButton.addEventListener("click", stopShuffling);
 startShuffling();
 
 //Section_One
-// const nini = document.createElement("h1");
-// nini.textContent =
-//   "Welcome to your best and second year on earth wishing you Long life and more prosperity in life and a Happy Birthday ";
-// document.querySelector("body").appendChild(nini);
+const nini = document.createElement("h1");
+nini.textContent =
+  "Welcome to your best and second year on earth wishing you Long life and more prosperity in life and a Happy Birthday ";
+document.querySelector("body").appendChild(nini);
 
 function startCountdown(startNumber) {
   const countdownElement = document.getElementById("countdown");

@@ -1,7 +1,7 @@
 body {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
   height: 100vh;
   margin: 20px;
@@ -9,9 +9,9 @@ body {
 }
 
 .image-container {
-  width: 90vw;
-  height: 90vh;
-  overflow: hidden;
+  /* width: 90vw;
+  height: 90vh; */
+  /* overflow: hidden; */
   border: 1px solid #ccc;
   margin-bottom: 20px;
   border-radius: 20px 10px 20px 10px;

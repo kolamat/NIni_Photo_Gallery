@@ -115,3 +115,30 @@ pauseButton.addEventListener("click", stopShuffling);
 
 // Start the shuffle initially
 startShuffling();
+
+//Section_One
+// const nini = document.createElement("h1");
+// nini.textContent =
+//   "Welcome to your best and second year on earth wishing you Long life and more prosperity in life and a Happy Birthday ";
+// document.querySelector("body").appendChild(nini);
+
+function startCountdown(startNumber) {
+  const countdownElement = document.getElementById("countdown");
+  let currentNumber = startNumber;
+
+  countdownElement.textContent = currentNumber;
+
+  const intervalId = setInterval(() => {
+    currentNumber -= 1;
+    countdownElement.textContent = currentNumber;
+    countdownElement.style.fontSize = "100px";
+
+    if (currentNumber <= 0) {
+      clearInterval(intervalId);
+      countdownElement.textContent = "Time's up!";
+      countdownElement.style.color = "#ff6b6b"; // Change color when time's up
+    }
+  }, 500);
+}
+
+startCountdown(15);

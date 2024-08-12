@@ -54,3 +54,24 @@ button {
   color: #040d1d;
   font-weight: 600;
 }
+
+.countdown {
+  font-size: 5em;
+  color: #61dafb;
+  animation: scale 1s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

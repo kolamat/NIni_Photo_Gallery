@@ -3,6 +3,7 @@
   color: aliceblue;
   display: flex;
   align-items: center;
+  margin: 0px 50px 0px 5px;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
 }
 
 #countdown {
-  font-size: 2em;
+  /* font-size: 2em; */
   text-align: center;
   margin-top: 20%;
 }
@@ -20,7 +21,7 @@ a {
   border: 1px solid #a0c1c1;
   margin-bottom: 20px;
   border-radius: 20px 10px 20px 10px;
-  width: 200px;
+  width: 100%;
 }
 
 #shuffle-image {
@@ -76,12 +77,9 @@ button {
 }
 
 #gallery {
-  margin: 50px 0px;
+  margin: 38px 100px;
   width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
 }
 
 @keyframes scale {

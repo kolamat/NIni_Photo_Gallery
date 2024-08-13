@@ -3,7 +3,7 @@ body.style.display = "grid";
 body.style.height = "100vh";
 body.style.width = "100vw";
 // body.style.padding = "5px";
-// body.style.margin = "0px 15px 0px 5px";
+body.style.margin = "0px";
 body.style.alignItems = "center";
 body.style.textAlign = "center";
 
@@ -27,10 +27,12 @@ video.style.width = "180px";
 document.getElementById("div").appendChild(video);
 
 //Section_One
-const nini = document.createElement("h1");
-nini.textContent =
-  "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
-document.querySelector("body").appendChild(nini);
+// const nini = document.createElement("h1");
+// nini.textContent =
+//   "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
+// nini.style.display = "flex";
+// nini.style.flexWrap = "wrap";
+// document.querySelector("body").appendChild(nini);
 
 function startCountdown(startNumber) {
   const countdownElement = document.getElementById("countdown");
@@ -41,7 +43,7 @@ function startCountdown(startNumber) {
   const intervalId = setInterval(() => {
     currentNumber -= 1;
     countdownElement.textContent = currentNumber;
-    countdownElement.style.fontSize = "100px";
+    countdownElement.style.fontSize = "60px";
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);

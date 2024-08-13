@@ -9,7 +9,7 @@ body.style.textAlign = "center";
 //HEADER_SECTION
 const home = document.createElement("img");
 home.src = "images1/fisayo.jpg";
-home.style.width = "100px";
+home.style.width = "180px";
 document.getElementById("header").appendChild(home);
 
 const gallery = document.createElement("h1");
@@ -20,7 +20,7 @@ document.getElementById("header").appendChild(gallery);
 const video = document.createElement("img");
 video.textContent = "Video";
 video.src = "images1/fisayo&hubby.jpg";
-video.style.width = "100px";
+video.style.width = "180px";
 document.getElementById("header").appendChild(video);
 
 //Section_One

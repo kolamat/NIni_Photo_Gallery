@@ -71,7 +71,8 @@ button {
 }
 
 #video {
-  padding: opx 20px;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 #gallery {
@@ -95,7 +96,7 @@ button {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: olive;
+    background-color: #45a8d3;
   }
   #header {
     flex-direction: column;

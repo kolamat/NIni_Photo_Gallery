@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-// body.style.display = "grid";
+body.style.display = "grid";
 body.style.height = "100vh";
 body.style.padding = "5px";
 body.style.margin = "10px";
@@ -26,7 +26,7 @@ document.getElementById("header").appendChild(video);
 //Section_One
 const nini = document.createElement("h1");
 nini.textContent =
-  "Welcome to your best and second year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
+  "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
 document.querySelector("body").appendChild(nini);
 
 function startCountdown(startNumber) {
@@ -42,7 +42,7 @@ function startCountdown(startNumber) {
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);
-      countdownElement.textContent = "Time's up!";
+      countdownElement.textContent = "Picture Slides⬇!";
       countdownElement.style.color = "#ff6b6b"; // Change color when time's up
     }
   }, 500);

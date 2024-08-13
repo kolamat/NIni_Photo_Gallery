@@ -10,7 +10,7 @@ const div = document.createElement("div");
 div.id = "div";
 div.style.display = "flex";
 div.style.justifyContent = "space-between";
-// div.style.width = "100vw";
+div.style.gap = "20px";
 document.getElementById("header").appendChild(div);
 
 //HEADER_SECTION

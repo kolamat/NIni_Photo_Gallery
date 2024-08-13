@@ -15,16 +15,15 @@ div.style.gap = "20px";
 document.getElementById("header").appendChild(div);
 
 //HEADER_SECTION
-const home = document.createElement("img");
-home.src = "images1/fisayo.jpg";
-home.style.width = "180px";
-document.getElementById("div").appendChild(home);
+const headerImage = document.createElement("img");
+headerImage.src = "images1/fisayo.jpg";
+headerImage.style.width = "180px";
+document.getElementById("div").appendChild(headerImage);
 
-const video = document.createElement("img");
-video.textContent = "Video";
-video.src = "images1/fisayo&hubby.jpg";
-video.style.width = "180px";
-document.getElementById("div").appendChild(video);
+const headerImage1 = document.createElement("img");
+headerImage1.src = "images1/fisayo&hubby.jpg";
+headerImage1.style.width = "180px";
+document.getElementById("div").appendChild(headerImage1);
 
 //Section_One
 // const nini = document.createElement("h1");

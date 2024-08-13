@@ -1,3 +1,11 @@
+const body = document.querySelector("body");
+body.style.display = "grid";
+body.style.height = "100vh";
+body.style.padding = "5px";
+body.style.margin = "10px";
+body.style.alignItems = "center";
+body.style.textAlign = "center";
+
 //HEADER_SECTION
 const home = document.createElement("img");
 home.textContent = "CountDown";
@@ -33,7 +41,7 @@ function startCountdown(startNumber) {
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);
-      countdownElement.textContent = "Slide un-fold";
+      countdownElement.textContent = "Picture Slide ;";
       countdownElement.style.color = "#ff6b6b"; // Change color when time's up
     }
   }, 500);

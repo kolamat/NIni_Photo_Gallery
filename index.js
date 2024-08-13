@@ -12,7 +12,7 @@ home.textContent = "CountDown";
 home.href = "#countdown";
 document.getElementById("header").appendChild(home);
 
-const gallery = document.createElement("img");
+const gallery = document.createElement("h1");
 gallery.textContent = "Gallery";
 gallery.href = "#gallery";
 document.getElementById("header").appendChild(gallery);
@@ -37,11 +37,11 @@ function startCountdown(startNumber) {
   const intervalId = setInterval(() => {
     currentNumber -= 1;
     countdownElement.textContent = currentNumber;
-    countdownElement.style.fontSize = "30px";
+    countdownElement.style.fontSize = "100px";
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);
-      countdownElement.textContent = "Picture Slide ;";
+      countdownElement.textContent = "Time's up!";
       countdownElement.style.color = "#ff6b6b"; // Change color when time's up
     }
   }, 500);
@@ -87,18 +87,18 @@ const playButton = document.getElementById("play-button");
 const pauseButton = document.getElementById("pause-button");
 
 // Function to shuffle images
-// function shuffleImages() {
-//   //   const randomIndex = Math.floor(Math.random() * images1.length);
-//   //   const selectedImage = images1[randomIndex];
+function shuffleImages() {
+  const randomIndex = Math.floor(Math.random() * images1.length);
+  const selectedImage = images1[randomIndex];
 
-//   imageElement.style.opacity = 0; // Fade out
-//   setTimeout(() => {
-//     imageElement.src = selectedImage;
-//     imageElement.style.opacity = 1; // Fade in
-//   }, 9400);
-// }
+  imageElement.style.opacity = 0; // Fade out
+  setTimeout(() => {
+    imageElement.src = selectedImage;
+    imageElement.style.opacity = 1; // Fade in
+  }, 9500);
+}
 
-// let intervalId; // Variable to hold the interval ID
+let intervalId; // Variable to hold the interval ID
 
 // Function to start the image shuffling
 function startShuffling() {
@@ -123,39 +123,3 @@ pauseButton.addEventListener("click", stopShuffling);
 
 // Start the shuffle initially
 startShuffling();
-
-let currentIndex = 0;
-let intervalId;
-
-function showNextImage() {
-  // Display the current image
-  slideImage.src = images1[currentIndex];
-
-  // Move to the next image index
-  currentIndex++;
-
-  // If we reach the end of the array, loop back to the beginning
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  }
-}
-
-function startSlideshow() {
-  // Start the interval for the slideshow
-  intervalId = setInterval(showNextImage, 3000); // Change every 3 seconds
-}
-
-function stopSlideshow() {
-  // Clear the interval to stop the slideshow
-  clearInterval(intervalId);
-}
-
-// Set the initial image
-slideImage.src = images[currentIndex];
-
-// Set up event listeners for the buttons
-playButton.addEventListener("click", startSlideshow);
-pauseButton.addEventListener("click", stopSlideshow);
-
-// Start the slideshow immediately when the page loads
-startSlideshow();

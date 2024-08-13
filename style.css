@@ -99,8 +99,10 @@ button {
     background-color: #45a8d3;
   }
   #header {
-    flex-direction: column;
+    display: grid;
+    padding: 20px;
     justify-content: center;
     gap: 10px;
+    border-radius: 10px 30px;
   }
 }

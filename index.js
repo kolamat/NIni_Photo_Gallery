@@ -6,22 +6,24 @@ body.style.margin = "10px";
 body.style.alignItems = "center";
 body.style.textAlign = "center";
 
+const div = document.createElement("div");
+div.id = "div";
+div.style.display = "flex";
+div.style.justifyContent = "space-between";
+// div.style.width = "100vw";
+document.getElementById("header").appendChild(div);
+
 //HEADER_SECTION
 const home = document.createElement("img");
 home.src = "images1/fisayo.jpg";
 home.style.width = "180px";
-document.getElementById("header").appendChild(home);
-
-const gallery = document.createElement("h1");
-gallery.textContent = "Gallery";
-gallery.href = "#gallery";
-document.getElementById("header").appendChild(gallery);
+document.getElementById("div").appendChild(home);
 
 const video = document.createElement("img");
 video.textContent = "Video";
 video.src = "images1/fisayo&hubby.jpg";
 video.style.width = "180px";
-document.getElementById("header").appendChild(video);
+document.getElementById("div").appendChild(video);
 
 //Section_One
 const nini = document.createElement("h1");

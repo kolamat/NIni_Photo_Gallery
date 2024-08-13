@@ -8,7 +8,7 @@ body.style.textAlign = "center";
 
 //HEADER_SECTION
 const home = document.createElement("img");
-home.textContent = "CountDown";
+home.src = "fiasyo.jpg";
 home.href = "#countdown";
 document.getElementById("header").appendChild(home);
 
@@ -19,6 +19,7 @@ document.getElementById("header").appendChild(gallery);
 
 const video = document.createElement("img");
 video.textContent = "Video";
+video.src = "fiasyo&hubby.jpg";
 video.href = "#video";
 document.getElementById("header").appendChild(video);
 

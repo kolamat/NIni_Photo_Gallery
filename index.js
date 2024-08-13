@@ -8,8 +8,8 @@ body.style.textAlign = "center";
 
 //HEADER_SECTION
 const home = document.createElement("img");
-home.src = "fiasyo.jpg";
-home.href = "#countdown";
+home.src = "images1/fisayo.jpg";
+home.style.width = "100px";
 document.getElementById("header").appendChild(home);
 
 const gallery = document.createElement("h1");
@@ -19,8 +19,8 @@ document.getElementById("header").appendChild(gallery);
 
 const video = document.createElement("img");
 video.textContent = "Video";
-video.src = "fiasyo&hubby.jpg";
-video.href = "#video";
+video.src = "images1/fisayo&hubby.jpg";
+video.style.width = "100px";
 document.getElementById("header").appendChild(video);
 
 //Section_One

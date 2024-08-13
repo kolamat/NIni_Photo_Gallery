@@ -1,15 +1,15 @@
 //HEADER_SECTION
-const home = document.createElement("a");
+const home = document.createElement("img");
 home.textContent = "CountDown";
 home.href = "#countdown";
 document.getElementById("header").appendChild(home);
 
-const gallery = document.createElement("a");
+const gallery = document.createElement("img");
 gallery.textContent = "Gallery";
 gallery.href = "#gallery";
 document.getElementById("header").appendChild(gallery);
 
-const video = document.createElement("a");
+const video = document.createElement("img");
 video.textContent = "Video";
 video.href = "#video";
 document.getElementById("header").appendChild(video);
@@ -29,11 +29,11 @@ function startCountdown(startNumber) {
   const intervalId = setInterval(() => {
     currentNumber -= 1;
     countdownElement.textContent = currentNumber;
-    countdownElement.style.fontSize = "100px";
+    countdownElement.style.fontSize = "30px";
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);
-      countdownElement.textContent = "Time's up!";
+      countdownElement.textContent = "Slide un-fold";
       countdownElement.style.color = "#ff6b6b"; // Change color when time's up
     }
   }, 500);
@@ -87,7 +87,7 @@ function shuffleImages() {
   setTimeout(() => {
     imageElement.src = selectedImage;
     imageElement.style.opacity = 1; // Fade in
-  }, 9500);
+  }, 9400);
 }
 
 let intervalId; // Variable to hold the interval ID

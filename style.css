@@ -77,7 +77,11 @@ button {
 
 #gallery {
   margin: 50px 0px;
-  width: 500px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @keyframes scale {
@@ -105,5 +109,7 @@ button {
     justify-content: center;
     gap: 10px;
     border-radius: 10px 30px;
+    margin: "0px 15px 0px 5px";
+    text-align: center;
   }
 }

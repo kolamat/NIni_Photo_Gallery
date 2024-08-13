@@ -1,8 +1,9 @@
 const body = document.querySelector("body");
 body.style.display = "grid";
 body.style.height = "100vh";
-body.style.padding = "5px";
-body.style.margin = "10px";
+body.style.width = "100vw";
+// body.style.padding = "5px";
+// body.style.margin = "0px 15px 0px 5px";
 body.style.alignItems = "center";
 body.style.textAlign = "center";
 

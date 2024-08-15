@@ -3,7 +3,7 @@
   color: aliceblue;
   display: flex;
   align-items: center;
-  /* margin: 0px 50px 0px 5px; */
+  width: 100%;
   margin: auto;
 }
 

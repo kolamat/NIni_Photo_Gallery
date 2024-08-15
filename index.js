@@ -32,7 +32,6 @@ const images1 = [
 
 const body = document.querySelector("body");
 body.style.display = "grid";
-// body.style.height = "100vh";
 body.style.width = "100%   ";
 body.style.padding = "0px";
 body.style.margin = "0px";
@@ -51,10 +50,12 @@ document.getElementById("header").appendChild(div);
 const headerImage = document.createElement("img");
 headerImage.src = "images1/fisayo.jpg";
 headerImage.style.width = "160px";
+headerImage.style.borderRadius = "10px";
 document.getElementById("div").appendChild(headerImage);
 
 const headerImage1 = document.createElement("img");
 headerImage1.src = "images1/fisayo&hubby.jpg";
+headerImage1.style.borderRadius = "10px";
 headerImage1.style.width = "160px";
 document.getElementById("div").appendChild(headerImage1);
 
@@ -72,7 +73,11 @@ function startCountdown(startNumber) {
     if (currentNumber <= 0) {
       clearInterval(intervalId);
       countdownElement.textContent = "Picture Slides⬇!";
-      countdownElement.style.color = "#ff6b6b"; // Change color when time's up
+      countdownElement.style.background = "#000"; // Change background when time's up
+      countdownElement.style.color = "#fff"; // Change color when time's up
+      countdownElement.style.width = "auto";
+      countdownElement.style.padding = "20px";
+      countdownElement.style.borderRadius = "20px";
     }
   }, 500);
 }
@@ -126,8 +131,6 @@ startShuffling();
 const button = document.createElement("button");
 button.id = "Button";
 button.textContent = "Click Me";
-// button.style.display = "flex";
-// button.style.flexWrap = "wrap";
 button.addEventListener("click", prayerButton);
 document.querySelector("body").appendChild(button);
 

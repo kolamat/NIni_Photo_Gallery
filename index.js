@@ -154,10 +154,29 @@ button.textContent = "Click Me";
 button.addEventListener("click", prayerButton);
 document.querySelector("body").appendChild(button);
 
+const button1 = document.createElement("button");
+button1.id = "Button1";
+button1.textContent = "Click Me";
+button1.addEventListener("click", motherPrayer);
+document.querySelector("body").appendChild(button1);
+
+const button1 = document.createElement("button");
+button1.id = "Button1";
+button1.textContent = "Click Me";
+button1.addEventListener("click", motherPrayer);
+document.querySelector("body").appendChild(button1);
+
 function prayerButton() {
   button.textContent =
     "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
   button.style.background = "black";
   button.style.color = "white";
   document.getElementById("Button").appendChild(button);
+}
+function motherPrayer() {
+  button1.textContent =
+    "Hip hip hurray to the most handsome prince given to me by God, Happy Birthday honey, God will enrich you with more happiness love and knowlegde, Amen i love you Baby";
+  button1.style.background = "black";
+  button1.style.color = "white";
+  document.getElementById("Button1").appendChild(button1);
 }

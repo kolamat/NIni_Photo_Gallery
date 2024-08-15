@@ -147,18 +147,24 @@ pauseButton.addEventListener("click", stopShuffling);
 // Start the shuffle initially
 startShuffling();
 
-// Section_One
+// PRAYER_BUTTON_SECTION
+const divButton = document.createElement("div");
+divButton.id = "divButton";
+divButton.style.display = "flex";
+divButton.style.gap = "20px";
+document.querySelector("body").appendChild(divButton);
+
 const button = document.createElement("button");
 button.id = "Button";
 button.textContent = "Click Me";
 button.addEventListener("click", prayerButton);
-document.querySelector("body").appendChild(button);
+document.getElementById("divButton").appendChild(button);
 
 const button1 = document.createElement("button");
 button1.id = "Button1";
-button1.textContent = "Click Me";
+button1.textContent = "Mother-Prayer";
 button1.addEventListener("click", motherPrayer);
-document.querySelector("body").appendChild(button1);
+document.getElementById("divButton").appendChild(button1);
 
 function prayerButton() {
   button.textContent =

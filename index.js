@@ -160,12 +160,6 @@ button1.textContent = "Click Me";
 button1.addEventListener("click", motherPrayer);
 document.querySelector("body").appendChild(button1);
 
-const closeButton = document.createElement("button");
-closeButton.id = "closeButton";
-closeButton.textContent = "Click Me To Close Both Paragraphs";
-closeButton.addEventListener("click", close);
-document.querySelector("body").appendChild(closeButton);
-
 function prayerButton() {
   button.textContent =
     "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
@@ -180,10 +174,4 @@ function motherPrayer() {
   button1.style.background = "black";
   button1.style.color = "white";
   document.getElementById("Button1").appendChild(button1);
-}
-
-function close() {
-  closeButton.textContent = "";
-  //   button.style.color = "white";
-  document.querySelector("button").appendChild(closeButton);
 }

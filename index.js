@@ -122,10 +122,19 @@ pauseButton.addEventListener("click", stopShuffling);
 // Start the shuffle initially
 startShuffling();
 
-//Section_One
-// const nini = document.createElement("h1");
-// nini.textContent =
-//   "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
-// nini.style.display = "flex";
-// nini.style.flexWrap = "wrap";
-// document.querySelector("body").appendChild(nini);
+// Section_One
+const button = document.createElement("button");
+button.id = "Button";
+button.textContent = "Click Me";
+// button.style.display = "flex";
+// button.style.flexWrap = "wrap";
+button.addEventListener("click", prayerButton);
+document.querySelector("body").appendChild(button);
+
+function prayerButton() {
+  button.textContent =
+    "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
+  button.style.background = "black";
+  button.style.color = "white";
+  document.getElementById("Button").appendChild(button);
+}

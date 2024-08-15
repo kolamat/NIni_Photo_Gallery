@@ -32,39 +32,31 @@ const images1 = [
 
 const body = document.querySelector("body");
 body.style.display = "grid";
-body.style.height = "100vh";
-body.style.width = "100vw";
-// body.style.padding = "5px";
+// body.style.height = "100vh";
+body.style.width = "100%   ";
+body.style.padding = "0px";
 body.style.margin = "0px";
 body.style.alignItems = "center";
+body.style.justifyItems = "center";
 body.style.textAlign = "center";
 body.style.overflowX = "hidden";
 
+//HEADER_SECTION
 const div = document.createElement("div");
 div.id = "div";
 div.style.display = "flex";
 div.style.justifyContent = "space-between";
-div.style.gap = "20px";
 document.getElementById("header").appendChild(div);
 
-//HEADER_SECTION
 const headerImage = document.createElement("img");
 headerImage.src = "images1/fisayo.jpg";
-headerImage.style.width = "180px";
+headerImage.style.width = "160px";
 document.getElementById("div").appendChild(headerImage);
 
 const headerImage1 = document.createElement("img");
 headerImage1.src = "images1/fisayo&hubby.jpg";
-headerImage1.style.width = "180px";
+headerImage1.style.width = "160px";
 document.getElementById("div").appendChild(headerImage1);
-
-//Section_One
-// const nini = document.createElement("h1");
-// nini.textContent =
-//   "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
-// nini.style.display = "flex";
-// nini.style.flexWrap = "wrap";
-// document.querySelector("body").appendChild(nini);
 
 function startCountdown(startNumber) {
   const countdownElement = document.getElementById("countdown");
@@ -129,3 +121,11 @@ pauseButton.addEventListener("click", stopShuffling);
 
 // Start the shuffle initially
 startShuffling();
+
+//Section_One
+// const nini = document.createElement("h1");
+// nini.textContent =
+//   "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
+// nini.style.display = "flex";
+// nini.style.flexWrap = "wrap";
+// document.querySelector("body").appendChild(nini);

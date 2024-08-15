@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+h1 {
+  display: flex;
+}
+
 a {
   font-weight: bold;
   font-size: larger;

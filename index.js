@@ -47,6 +47,26 @@ div.style.display = "flex";
 div.style.justifyContent = "space-between";
 document.getElementById("header").appendChild(div);
 
+const headhang = document.createElement("img");
+headhang.src = "blue15.jpg";
+headhang.style.width = "100px";
+headhang.style.borderRadius = "10px";
+document.querySelector("h1").appendChild(headhang);
+
+const h1 = document.createElement("h1");
+h1.textContent = "NiniOluwaLere Birthday Card";
+h1.style.fontSize = "45px";
+h1.style.marginLeft = "10px";
+h1.style.marginRight = "10px";
+h1.style.padding = "10px";
+document.querySelector("h1").appendChild(h1);
+
+const headhang1 = document.createElement("img");
+headhang1.src = "header15.jpg";
+headhang1.style.borderRadius = "10px";
+headhang1.style.width = "100px";
+document.querySelector("h1").appendChild(headhang1);
+
 const headerImage = document.createElement("img");
 headerImage.src = "images1/fisayo.jpg";
 headerImage.style.width = "160px";

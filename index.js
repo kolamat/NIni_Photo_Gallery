@@ -166,6 +166,11 @@ button1.textContent = "Mother-Prayer";
 button1.addEventListener("click", motherPrayer);
 document.getElementById("divButton").appendChild(button1);
 
+const alertPop = document.createElement("button");
+alertPop.textContent = "Click-Me Too";
+alertPop.addEventListener("click", pop);
+document.getElementById("divButton").appendChild(alertPop);
+
 function prayerButton() {
   button.textContent =
     "Welcome to your best year on earth wishing you Long life and  prosperity in life and a Happy Birthday ";
@@ -180,4 +185,11 @@ function motherPrayer() {
   button1.style.background = "black";
   button1.style.color = "white";
   document.getElementById("Button1").appendChild(button1);
+}
+
+function pop() {
+  alertPop.textContent = "Thank you for clicking";
+  alert(
+    "Happy Birthday From Uncle, long life and properity and many more wins in life Enjoy your day to the fullest"
+  );
 }

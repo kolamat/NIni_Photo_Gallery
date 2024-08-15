@@ -15,7 +15,8 @@ a {
 #countdown {
   /* font-size: 2em; */
   text-align: center;
-  margin-top: 20%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .image-container {
